@@ -2,7 +2,7 @@
 
 > A Raspberry Pi-powered smart surveillance and tracking turret with facial recognition, joystick control, and intrusion detection — all managed via a futuristic web dashboard.
 
-![Banner](https://github.com/OsmanDeol/Sentinel-360-ai-turret/assets/banner-placeholder.jpg)
+![Banner](sentinel.jpg)
 
 ---
 
