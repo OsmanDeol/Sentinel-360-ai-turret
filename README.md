@@ -1,125 +1,115 @@
-# 🛡️ Sentinel 360° AI Turret
+# 🔭 Sentinel 360° AI Turret
 
-> A Raspberry Pi-powered smart surveillance and tracking turret with facial recognition, joystick control, and intrusion detection — all managed via a futuristic web dashboard.
+> A Raspberry Pi-powered smart surveillance and tracking turret with facial recognition, real-time pan-tilt control, and an interactive web dashboard.
 
 ![Banner](sentinel%20360.jpeg)
 
+---
+
+### 🚀 Features
+
+- 🎯 **Auto Tracking Mode**: Face recognition and automatic pan-tilt targeting using YOLOv8.
+- 🕹️ **Manual Mode**: Real-time joystick control from a futuristic web dashboard.
+- 🔒 **Surveillance Mode**: Sends an email alert and records footage when a person is detected.
+- 🌐 **Interactive Dashboard** (built with Next.js): Switch modes, view live feed, and monitor status.
+- 💡 **Hardware Integration**: Built using Raspberry Pi, camera, servos, joystick.
+- 📷 **Video Feed & Recording**: Live feed with auto-lock, and recording during intrusions.
 
 ---
 
-## 🚀 Features
+### 📂 Project Structure
 
-### 🎯 1. Auto-Tracking Mode
-- Uses YOLOv8-Face model to detect and follow human faces.
-- Sends real-time commands to the pan-tilt servos using UDP.
-- Minimal latency and smooth tracking.
-
-### 🕹️ 2. Manual Control Mode
-- Control turret direction with an on-screen joystick from a React dashboard.
-- Live camera view included.
-- Real-time servo control via Flask API on Raspberry Pi.
-
-### 🔒 3. Surveillance Mode
-- Starts video recording upon detection of a person.
-- Sends a real-time email alert with:
-  - Timestamp of detection
-  - Snapshot of intruder
-- All powered by OpenCV, YOLO, and Flask.
-
----
-
-## 📦 Folder Structure
+```bash
 Sentinel-360-ai-turret/
 │
-├── frontend/        # Next.js dashboard (deploy locally)
-│
-├── backend/         # PC-side detection scripts (face tracking & surveillance)
-│
-└── pi/              # Raspberry Pi scripts (servo control, Flask server)
+├── frontend/      # Next.js web dashboard (deployed via Vercel)
+├── backend/       # PC-side face tracking and surveillance scripts (YOLO, Flask)
+└── pi/            # Raspberry Pi servo control + manual control Flask server
+🛠️ Requirements
+PC (Backend):
+Python 3.9+
 
-⚙️ Requirements
-PC
-Python 3.10+
-
-PyTorch + torchvision (CUDA recommended)
-
-ultralytics
+Flask
 
 OpenCV
 
-Flask
+Ultralytics (YOLOv8)
 
-Flask-Cors
+Torch & TorchVision (with GPU support for CUDA)
 
-smtplib (for email)
-
-iVCam or USB webcam
-
-Pi
-Raspberry Pi OS
-
-RPi.GPIO
-
-Flask
-
-Flask-Cors
-
-Servo motor wired to GPIO (powered externally for best results)
-
-Install Python requirements:
+smtplib (for email alerts)
 
 bash
 Copy
 Edit
-pip install -r requirements.txt
-🚀 Setup & Run
-1. Frontend (Vercel or Local)
+pip install -r backend/requirements.txt
+Pi:
+Flask
+
+RPi.GPIO
+
+bash
+Copy
+Edit
+pip install -r pi/requirements.txt
+Frontend:
+Node.js 18+
+
+npm
+
 bash
 Copy
 Edit
 cd frontend
 npm install
 npm run dev
-2. Backend Scripts
-In backend/, run:
+🖥️ Usage
+Start Flask servers:
 
-auto_stream.py for Auto Tracking Mode
+On PC: Start auto_stream.py and surveillance_stream.py as needed.
 
-surveillance_stream.py for Surveillance Mode
+On Raspberry Pi: Start servo.py and server.py.
 
-3. Raspberry Pi Server
+Launch Frontend:
+
 bash
 Copy
 Edit
-cd pi
-python3 server.py   # For Manual Joystick Control
-python3 servo.py    # For receiving UDP-based angle updates
-🛰️ UML Diagram
-mermaid
-Copy
-Edit
-graph LR
-A[Web Dashboard] -- Selects Mode --> B[Flask Backend (server.py)]
-B --> |Manual| C[Servo Control via GPIO]
-B --> |Auto| D[PC Detection → UDP → Pi]
-B --> |Surveillance| E[Stream → Record + Email]
-📷 Demo Video
-🎬 Coming soon on YouTube!
+cd frontend
+npm run dev
+Switch between modes in the UI:
 
-💌 Email Alert (Surveillance Mode)
-Sends a screenshot, timestamp, and location when a person is detected.
+Auto Tracking
 
-Uses your Gmail account (App Password recommended).
+Manual Control
 
-🔒 Disclaimer
-This project is built for educational and demonstration purposes only.
+Surveillance
 
-✨ Credits
-YOLOv8 by Ultralytics
+📧 Surveillance Mode Email Setup
+Set up a Gmail app password:
 
-Face model by lindevs/yolov8-face
+Enable 2FA on Gmail
 
-Design inspired by futuristic surveillance and robotics systems.
+Create an App Password
 
-⭐ Final Thoughts
-This is not just a turret — it's a complete end-to-end AI + IoT system, showing how future defense and surveillance tools can be created with open-source power.
+Add it to surveillance_stream.py
+
+🧠 Tech Stack
+YOLOv8 (ultralytics)
+
+Flask
+
+OpenCV
+
+Next.js (React)
+
+Raspberry Pi GPIO
+
+
+
+📸 Demo Preview (YouTube)
+🎬 YouTube Demo - Watch Here (Add your link here)
+
+
+📜 License
+MIT License © 2025
