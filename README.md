@@ -107,16 +107,13 @@ Raspberry Pi GPIO
 
 
 
----
+## 🎥 Demo
 
-### 📸 Demo Preview
+Watch the full system in action on YouTube:  
+➡️ [Sentinel 360° AI Turret - Demo](https://youtu.be/pR1h6KWUKuw)
 
-Watch the full project in action on YouTube:  
-[🎬 Sentinel 360° AI Turret - Full Demo](https://youtu.be/pR1h6KWUKuw)
+[![Watch the video](https://img.youtube.com/vi/pR1h6KWUKuw/0.jpg)](https://youtu.be/pR1h6KWUKuw)
 
-[![Watch the demo](https://img.youtube.com/vi/pR1h6KWUKuw/0.jpg)](https://youtu.be/pR1h6KWUKuw)
-
----
 
 
 📜 License
