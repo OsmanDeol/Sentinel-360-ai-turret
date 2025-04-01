@@ -30,7 +30,7 @@
 ## 📦 Folder Structure
 Sentinel-360-ai-turret/
 │
-├── frontend/        # Next.js dashboard (deployed on Vercel)
+├── frontend/        # Next.js dashboard (deploy locally)
 │
 ├── backend/         # PC-side detection scripts (face tracking & surveillance)
 │
