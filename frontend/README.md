@@ -8,43 +8,36 @@ This is the **Next.js + Tailwind CSS** powered web dashboard for controlling and
 
 ## 📁 Folder Structure
 
+```
 frontend/
-├── app/                          # App Router pages
-│   ├── globals.css               # Global styles
-│   ├── layout.tsx                # Root layout (includes ThemeProvider, NavBar)
-│   ├── page.tsx                  # Home page (mode selector)
-│
-├── components/                   # UI components for each mode
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
 │   ├── auto-tracking-mode.tsx
 │   ├── manual-control-mode.tsx
 │   ├── surveillance-mode.tsx
 │   ├── mode-selector.tsx
 │   ├── navbar.tsx
 │   ├── theme-provider.tsx
-│   └── ui/                       # ShadCN + custom UI components
+│   └── ui/
 │       ├── button.tsx
-│       ├── dialog.tsx
 │       ├── card.tsx
 │       ├── chart.tsx
-│       ├── slider.tsx
 │       ├── toast.tsx
-│       └── ... (40+ more reusable UI components)
-│
+│       └── ... (40+ more)
 ├── hooks/
 │   ├── use-mobile.tsx
-│   ├── use-toast.ts
-│
+│   └── use-toast.ts
 ├── lib/
-│   └── utils.ts                  # Utility functions
-│
-├── public/                       # Static assets
+│   └── utils.ts
+├── public/
 │   ├── placeholder-logo.png
 │   ├── placeholder-user.jpg
 │   └── ...
-│
 ├── styles/
-│   └── globals.css               # Optional alternative location for styling
-│
+│   └── globals.css
 ├── .gitignore
 ├── README.md
 ├── components.json
@@ -54,9 +47,21 @@ frontend/
 ├── tsconfig.json
 ├── package.json
 ├── pnpm-lock.yaml
-├── package-lock.json
+└── package-lock.json
+```
 
+### 📄 Description of Key Folders & Files
 
+- `app/` – Pages built using Next.js App Router.
+- `components/` – All UI components including dashboards for each mode.
+  - `ui/` – ShadCN components (accordion, toast, button, etc).
+- `hooks/` – Custom React hooks for modular behavior.
+- `lib/` – Utility logic for shared helper functions.
+- `public/` – Static assets like logos and images.
+- `styles/` – Global Tailwind CSS styling.
+- `tailwind.config.ts` – Tailwind CSS setup and theme customization.
+- `next.config.mjs` – Next.js configuration.
+- `package.json` – Project metadata and dependencies.
 
 🚀 How to Run the Frontend
 1. Navigate to the frontend folder
