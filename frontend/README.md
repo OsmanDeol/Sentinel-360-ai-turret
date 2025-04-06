@@ -104,7 +104,9 @@ TypeScript
 Integrated with Flask backend and Raspberry Pi GPIO system
 
 🖼️ Screenshots
-Add screen captures of each mode in action (Manual, Auto, Surveillance)
+
+![UI Preview](./x.png)
+
 
 📄 License
 This project is open-source under the MIT Licens
