@@ -16,103 +16,48 @@
 - 📷 **Video Feed & Recording**: Live feed with auto-lock, and recording during intrusions.
 
 ---
+# 🎯 Sentinel-360 AI Turret
 
-### 📂 Project Structure
+Sentinel-360 is a modular AI-powered turret system that features real-time face tracking, surveillance alerts, and manual joystick control. It combines a Raspberry Pi for servo control, a PC for AI inference and video streaming, and a modern web dashboard for intuitive user control.
 
-```bash
-Sentinel-360-ai-turret/
-│
-├── frontend/      # Next.js web dashboard (deployed via Vercel)
-├── backend/       # PC-side face tracking and surveillance scripts (YOLO, Flask)
-└── pi/            # Raspberry Pi servo control + manual control Flask server
-🛠️ Requirements
-PC (Backend):
-Python 3.9+
+---
 
-Flask
+## 📽️ Project Demo Video
 
-OpenCV
+🎬 Watch the full demonstration here:  
+➡️ [https://youtu.be/pR1h6KWUKuw](https://youtu.be/pR1h6KWUKuw)
 
-Ultralytics (YOLOv8)
+---
 
-Torch & TorchVision (with GPU support for CUDA)
+## 🧾 About This Repository
 
-smtplib (for email alerts)
+This project folder includes everything needed for the final submission:
 
-bash
-Copy
-Edit
-pip install -r backend/requirements.txt
-Pi:
-Flask
+- ✅ Project presentation slides and demo media  
+- ✅ UML diagrams for system architecture and logic  
+- ✅ Three operating modes: Manual Control, Auto Tracking, Surveillance  
+- ✅ Video stream integration and email alerts  
+- ✅ Raspberry Pi + PC multi-device coordination  
 
-RPi.GPIO
+Each core section of the system contains its **own `README.md` file** for setup and usage:
 
-bash
-Copy
-Edit
-pip install -r pi/requirements.txt
-Frontend:
-Node.js 18+
+| Folder        | Description                                      |
+|---------------|--------------------------------------------------|
+| `frontend/`   | 📱 Next.js dashboard (deployed on Vercel)         |
+| `backend/`    | 🧠 Python scripts for YOLO inference & Flask APIs |
+| `pi/`         | 🤖 Servo control code running on Raspberry Pi     |
+| `diagrams/`   | 📊 UML activity + flow diagrams                    |
+| `presentation/` | 🖼️ Project slides, screenshots, and references |
 
-npm
+---
 
-bash
-Copy
-Edit
-cd frontend
-npm install
-npm run dev
-🖥️ Usage
-Start Flask servers:
+## ✅ Final Notes
 
-On PC: Start auto_stream.py and surveillance_stream.py as needed.
+This `README.md` is an overview.  
+👉 Check inside each folder for detailed setup and code explanations.
 
-On Raspberry Pi: Start servo.py and server.py.
+---
 
-Launch Frontend:
-
-bash
-Copy
-Edit
-cd frontend
-npm run dev
-Switch between modes in the UI:
-
-Auto Tracking
-
-Manual Control
-
-Surveillance
-
-📧 Surveillance Mode Email Setup
-Set up a Gmail app password:
-
-Enable 2FA on Gmail
-
-Create an App Password
-
-Add it to surveillance_stream.py
-
-🧠 Tech Stack
-YOLOv8 (ultralytics)
-
-Flask
-
-OpenCV
-
-Next.js (React)
-
-Raspberry Pi GPIO
-
-
-
-## 🎥 Demo
-
-Watch the full system in action on YouTube:  
-➡️ [Sentinel 360° AI Turret - Demo](https://youtu.be/pR1h6KWUKuw)
-
-[![Watch the video](https://img.youtube.com/vi/pR1h6KWUKuw/0.jpg)](https://youtu.be/pR1h6KWUKuw)
 
 
 
