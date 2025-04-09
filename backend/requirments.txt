@@ -4,3 +4,5 @@ opencv-python
 ultralytics
 torch
 torchvision
+numpy
+python-dotenv
