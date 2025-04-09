@@ -47,7 +47,7 @@ Each core section of the system contains its **own `README.md` file** for setup 
 | `backend/`    | 🧠 Python scripts for YOLO inference & Flask APIs |
 | `pi/`         | 🤖 Servo control code running on Raspberry Pi     |
 | `diagrams/`   | 📊 UML activity + flow diagrams                    |
-| `presentation/` | 🖼️ Project slides, screenshots, and references |
+
 
 ---
 
