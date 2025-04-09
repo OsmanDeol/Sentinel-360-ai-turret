@@ -48,7 +48,7 @@ def send_email_alert(frame):
 
     try:
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login("osmanalideol@gmail.com", "oqef aewc hvrb xbxf")
+        server.login("youremail", "your pass")
         server.send_message(msg)
         server.quit()
         print("✅ Email alert with screenshot sent!")
