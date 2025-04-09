@@ -33,7 +33,7 @@ def start_surveillance():
     global running_process
     print("🔒 Starting Surveillance Mode...")
     running_process = subprocess.Popen(
-        ["python", "surveillance_mode.py"], preexec_fn=os.setsid
+        ["python", "surveillance_stream.py"], preexec_fn=os.setsid
     )
     return {"status": "started surveillance"}
 
