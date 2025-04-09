@@ -17,6 +17,16 @@ backend/
 ├── requirements.txt
 ```
 
+📄 Description of Key Folders & Files
+auto_stream.py – Launches face-tracking mode using YOLOv8 and streams video to the dashboard; calculates face position and sends pan/tilt angles to Raspberry Pi via UDP.
+
+surveillance_stream.py – Enables surveillance mode: detects human presence, records video, sends email alerts, and streams footage.
+
+server.py – Flask-based API server that allows frontend to switch between modes.
+
+yolov8n-face-lindevs.pt – Lightweight YOLOv8n model trained specifically for real-time face detection.
+
+requirements.txt – Lists all Python dependencies required for running the backend
 
 ## 🚀 Modes Overview
 
@@ -37,50 +47,3 @@ backend/
 - No backend processing needed
 
 ---
-
-## 🔧 Setup Instructions
-
-### 1. Clone & Navigate
-
-```bash
-git clone https://github.com/OsmanDeol/Sentinel-360-ai-turret.git
-cd Sentinel-360-ai-turret/backend
-2. Set Up Virtual Environment
-bash
-Copy
-Edit
-python -m venv .venv
-.venv\Scripts\activate   # For Windows
-3. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-✅ Make sure PyTorch is installed with GPU support if using CUDA.
-
-▶️ Running the Scripts
-🌐 API Server (for dashboard)
-bash
-Copy
-Edit
-python server.py
-🧠 Auto Face Tracking Mode
-bash
-Copy
-Edit
-python auto_stream.py
-🔒 Surveillance Mode
-bash
-Copy
-Edit
-python surveillance_stream.py
-📤 Email Alert Setup
-Create a .env file:
-
-ini
-Copy
-Edit
-EMAIL_SENDER=your_email@gmail.com
-EMAIL_PASSWORD=your_app_password
-EMAIL_RECEIVER=receiver_email@gmail.com
-Enable 2FA on Gmail and generate an App Password: 👉 https://support.google.com/accounts/answer/185833
