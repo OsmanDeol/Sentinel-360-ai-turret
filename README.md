@@ -5,6 +5,15 @@
 ![Banner](sentinel%20360.jpeg)
 
 ---
+
+
+---
+# 🎯 Sentinel-360 AI Turret
+
+The Sentinel 360° is more than just a security camera — it's a real-time autonomous surveillance and tracking system powered by AI. Equipped with facial recognition, servo-based tracking, and emergency alert capabilities, it offers next-gen security intelligence for any environment.
+
+
+---
 ## 📂 Repository Structure
 
 This project is split into 3 main components. Each has its own dedicated README for clarity and in-depth documentation:
@@ -23,13 +32,7 @@ This project is split into 3 main components. Each has its own dedicated README 
 - 💡 **Hardware Integration**: Built using Raspberry Pi, camera, servos, joystick.
 - 📷 **Video Feed & Recording**: Live feed with auto-lock, and recording during intrusions.
 
----
-# 🎯 Sentinel-360 AI Turret
 
-The Sentinel 360° is more than just a security camera — it's a real-time autonomous surveillance and tracking system powered by AI. Equipped with facial recognition, servo-based tracking, and emergency alert capabilities, it offers next-gen security intelligence for any environment.
-
-
----
 
 ---
 🛡️ Sentinel 360° AI Turret — Intelligent Surveillance & Tracking System
