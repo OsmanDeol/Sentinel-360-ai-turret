@@ -69,6 +69,37 @@ Each core section of the system contains its **own `README.md` file** for setup 
 
 ---
 
+
+## 👨‍💻 Meet the Team
+
+### 🧠 Osman Deol  
+**Role:** Lead Developer  
+**Focus:** Backend · AI Integration · Project Architecture  
+> *"I engineered the ML pipeline, coordinated backend/frontend integration, and drove the overall vision."*
+
+---
+
+### 🛠️ Umberto De Luca
+**Role:** Hardware Engineer  
+**Focus:** Raspberry Pi · Servo System · Power Architecture  
+> *"I wired and configured the servo control system and ensured all hardware components were functional and precise."*
+
+---
+
+### ⚙️ David Ursu  
+**Role:** Hardware Assistant  
+**Focus:** GPIO Configuration · Mechanical Setup  
+> *"I contributed to servo calibration and the physical assembly of the turret and pan-tilt mechanism."*
+
+---
+
+### 💻 Joel  deHoog
+**Role:** Frontend Assistant  
+**Focus:** React Integration · Web Dashboard Components  
+> *"I contributed to refining the web interface and supported frontend integration with the Flask backend."*
+---
+---
+
 ## ✅ Final Notes
 
 This `README.md` is an overview.  
