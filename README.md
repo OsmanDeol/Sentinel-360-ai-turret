@@ -34,7 +34,8 @@ The Sentinel 360° is more than just a security camera — it's a real-time auto
 ---
 🛡️ Sentinel 360° AI Turret — Intelligent Surveillance & Tracking System
 
-🔗 GitHub: github.com/OsmanDeol/Sentinel-360-ai-turret
+🔗 GitHub: [github.com/OsmanDeol/Sentinel-360-ai-turret](https://github.com/OsmanDeol/Sentinel-360-ai-turret)
+
 
 ---
 
