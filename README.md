@@ -36,14 +36,8 @@ The Sentinel 360° is more than just a security camera — it's a real-time auto
 
 🔗 GitHub: [github.com/OsmanDeol/Sentinel-360-ai-turret](https://github.com/OsmanDeol/Sentinel-360-ai-turret)
 
-
----
-
-
-## 📽️ Project Demo Video
-
-🎬 Watch the full demonstration here:  
-➡️ [https://youtu.be/pR1h6KWUKuw](https://youtu.be/pR1h6KWUKuw)
+🎬 Watch the full demonstration here:
+➡️ [YouTube Demo](https://youtu.be/pR1h6KWUKuw)
 
 ---
 
@@ -64,8 +58,20 @@ Each core section of the system contains its **own `README.md` file** for setup 
 | `frontend/`   | 📱 Next.js dashboard (deployed on Vercel)         |
 | `backend/`    | 🧠 Python scripts for YOLO inference & Flask APIs |
 | `pi/`         | 🤖 Servo control code running on Raspberry Pi     |
-| `diagrams/`   | 📊 UML activity + flow diagrams                    |
+| `diagrams/`   | 📊 UML activity + flow diagrams                   |
+| `presentaion/`| contains the presentaion slide                    |
 
+---
+
+🧩 UML & Architecture Diagrams  
+📂 Located in: `diagrams/`
+
+- **overview.png** – High-level system architecture (Frontend → Backend → Pi)  
+- **auto-tracking-mode.png** – Auto-tracking logic with YOLO + UDP  
+- **manual-mode.png** – Real-time servo control using joystick  
+- **surveillance-mode.png** – Email alerts, detection & recording logic  
+
+---
 
 ---
 
