@@ -57,7 +57,11 @@ This project is split into **3 core components**, each with its **own detailed R
   **surveillance-mode.png** — Flow of detecting a person → recording footage → sending email
 
 ---
+🌐 Live Web Dashboard
+Try the fully interactive dashboard here:
+🔗 https://sentinel-360-ai-turret.vercel.app
 
+Hosted on Vercel. Switch modes, view live feed, and experience the futuristic control panel in action.
 ## 🎬 Demo Video
 
 Watch the full demonstration on YouTube:  
