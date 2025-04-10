@@ -1,83 +1,68 @@
-# 🔭 Sentinel 360° AI Turret
-
+# 🛡️ Sentinel 360° AI Turret  
 > A Raspberry Pi-powered smart surveillance and tracking turret with facial recognition, real-time pan-tilt control, and an interactive web dashboard.
 
 ![Banner](sentinel%20360.jpeg)
 
 ---
 
+## 🎯 What is Sentinel-360?
+
+**Sentinel 360°** is more than just a security camera — it's a real-time **autonomous surveillance and tracking system powered by AI**.  
+Equipped with facial recognition, servo-based targeting, and emergency alert capabilities, it delivers **next-gen security intelligence** for any environment.
 
 ---
-# 🎯 Sentinel-360 AI Turret
 
-The Sentinel 360° is more than just a security camera — it's a real-time autonomous surveillance and tracking system powered by AI. Equipped with facial recognition, servo-based tracking, and emergency alert capabilities, it offers next-gen security intelligence for any environment.
-
-
----
 ## 📂 Repository Structure
 
-This project is split into 3 main components. Each has its own dedicated README for clarity and in-depth documentation:
+This project is split into **3 core components**, each with its **own detailed README** for setup and code explanation:
 
-- [`frontend/`](./frontend) — Web Dashboard built with Next.js → [Frontend README](./frontend/README.md)
-- [`backend/`](./backend) — PC-side YOLO + Flask system → [Backend README](./backend/README.md)
-- [`pi/`](./pi) — Raspberry Pi code for controlling servos → [Pi README](./pi/README.md)
-
-
-### 🚀 Features
-
-- 🎯 **Auto Tracking Mode**: Face recognition and automatic pan-tilt targeting using YOLOv8.
-- 🕹️ **Manual Mode**: Real-time joystick control from a futuristic web dashboard.
-- 🔒 **Surveillance Mode**: Sends an email alert and records footage when a person is detected.
-- 🌐 **Interactive Dashboard** (built with Next.js): Switch modes, view live feed, and monitor status.
-- 💡 **Hardware Integration**: Built using Raspberry Pi, camera, servos, joystick.
-- 📷 **Video Feed & Recording**: Live feed with auto-lock, and recording during intrusions.
-
-
-
----
-🛡️ Sentinel 360° AI Turret — Intelligent Surveillance & Tracking System
-
-🔗 GitHub: [github.com/OsmanDeol/Sentinel-360-ai-turret](https://github.com/OsmanDeol/Sentinel-360-ai-turret)
-
-🎬 Watch the full demonstration here:
-➡️ [YouTube Demo](https://youtu.be/pR1h6KWUKuw)
+- [`frontend/`](./frontend) — Web Dashboard built with Next.js → [Frontend README](./frontend/README.md)  
+- [`backend/`](./backend) — PC-side YOLOv8 detection + Flask server → [Backend README](./backend/README.md)  
+- [`pi/`](./pi) — Raspberry Pi code for controlling pan/tilt servos → [Pi README](./pi/README.md)  
+- [`diagrams/`](./diagrams) — UML diagrams, system workflows  
+- [`presentation/`](./presentation) — Final project slides and timeline
 
 ---
 
-## 🧾 About This Repository
+## 🚀 Features
 
-This project folder includes everything needed for the final submission:
-
-- ✅ Project presentation slides and demo media  
-- ✅ UML diagrams for system architecture and logic  
-- ✅ Three operating modes: Manual Control, Auto Tracking, Surveillance  
-- ✅ Video stream integration and email alerts  
-- ✅ Raspberry Pi + PC multi-device coordination  
-
-Each core section of the system contains its **own `README.md` file** for setup and usage:
-
-| Folder        | Description                                      |
-|---------------|--------------------------------------------------|
-| `frontend/`   | 📱 Next.js dashboard (deployed on Vercel)         |
-| `backend/`    | 🧠 Python scripts for YOLO inference & Flask APIs |
-| `pi/`         | 🤖 Servo control code running on Raspberry Pi     |
-| `diagrams/`   | 📊 UML activity + flow diagrams                   |
-| `presentaion/`| contains the presentaion slide                    |
+- 🎯 **Auto Tracking Mode** – Face recognition + automatic targeting using YOLOv8 + UDP
+- 🕹️ **Manual Mode** – Joystick control via futuristic web dashboard
+- 🔒 **Surveillance Mode** – Detects people, records footage, sends email alert with screenshot
+- 🌐 **Next.js Dashboard** – Interactive, responsive UI to switch modes and monitor turret status
+- 📷 **Live Video Feed** – View camera feed from any mode in real time
+- 📬 **Email Notification** – Sends alert when intruder is detected with timestamp & screenshot
+- 🤖 **Servo System** – 360° horizontal + 90° vertical movement powered by Raspberry Pi
 
 ---
 
-🧩 UML & Architecture Diagrams  
-📂 Located in: `diagrams/`
+## 🧠 Intelligent Workflow Overview
 
-- **overview.png** – High-level system architecture (Frontend → Backend → Pi)  
-- **auto-tracking-mode.png** – Auto-tracking logic with YOLO + UDP  
-- **manual-mode.png** – Real-time servo control using joystick  
-- **surveillance-mode.png** – Email alerts, detection & recording logic  
+![overview](./diagrams/overview.png)  
+📍 **System Overview** — Frontend → Flask (PC) → Servo Control (Pi)
 
 ---
 
+## 📊 UML & Architecture Diagrams  
+📂 Located in: [`diagrams/`](./diagrams/)
+
+- ![auto-tracking-mode](./diagrams/auto-tracking-mode)  
+  **auto-tracking-mode.png** — Shows how face detection → angle calculation → servo movement works
+
+- ![manual-mode](./diagrams/manual-mode.png)  
+  **manual-mode.png** — Illustrates joystick data → Pi via UDP → real-time servo control
+
+- ![surveillance-mode](./diagrams/surveillance-mode.png)  
+  **surveillance-mode.png** — Flow of detecting a person → recording footage → sending email
+
 ---
 
+## 🎬 Demo Video
+
+Watch the full demonstration on YouTube:  
+📽️ [https://youtu.be/pR1h6KWUKuw](https://youtu.be/pR1h6KWUKuw)
+
+---
 
 ## 👨‍💻 Meet the Team
 
@@ -88,7 +73,7 @@ Each core section of the system contains its **own `README.md` file** for setup 
 
 ---
 
-### 🛠️ Umberto De Luca
+### 🛠️ Umberto De Luca  
 **Role:** Hardware Engineer  
 **Focus:** Raspberry Pi · Servo System · Power Architecture  
 > *"I wired and configured the servo control system and ensured all hardware components were functional and precise."*
@@ -102,22 +87,41 @@ Each core section of the system contains its **own `README.md` file** for setup 
 
 ---
 
-### 💻 Joel  deHoog
+### 💻 Joel deHoog  
 **Role:** Frontend Assistant  
 **Focus:** React Integration · Web Dashboard Components  
 > *"I contributed to refining the web interface and supported frontend integration with the Flask backend."*
----
----
-
-## ✅ Final Notes
-
-This `README.md` is an overview.  
-👉 Check inside each folder for detailed setup and code explanations.
 
 ---
 
+## 📈 Vision & Future Work
 
+Sentinel 360° has immense potential beyond this prototype:
 
+- Expand to **multi-turret systems** for larger areas  
+- Integrate **license plate or object detection**  
+- Add **facial recognition whitelist/blacklist logic**  
+- Deploy on edge devices like **Jetson Nano or Coral TPU**  
+- Enable **remote control and SMS/Push alerts**  
+- Integrate with **drone surveillance or robotic patrols**  
 
-📜 License
+---
+
+## 🧾 About This Repository
+
+✅ Complete project source code and configuration  
+✅ 3 Operating Modes (Auto, Manual, Surveillance)  
+✅ Diagrams + media + demo video  
+✅ Packaged for submission with clear documentation  
+
+📍 **Every folder has a dedicated README** — start from root and follow setup instructions step-by-step!
+
+---
+
+## 📜 License
+
 MIT License © 2025
+
+---
+
+🔗 GitHub Repo: [github.com/OsmanDeol/Sentinel-360-ai-turret](https://github.com/OsmanDeol/Sentinel-360-ai-turret)
