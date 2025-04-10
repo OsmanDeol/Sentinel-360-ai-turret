@@ -6,6 +6,13 @@ This is the **Next.js + Tailwind CSS** powered web dashboard for controlling and
 - 🧠 **Auto Tracking** – Face detection and automated servo adjustments using YOLOv8.
 - 🔒 **Surveillance** – Live video feed + recording + email alerts on detection.
 
+- ### 🌐 Live Demo  
+🔗 Hosted on Vercel: [sentinel-360-ai-turret.vercel.app](https://sentinel-360-ai-turret.vercel.app)  
+> No backend or camera feed required to test the UI. Toggle modes and explore the full dashboard experience.
+
+---
+
+
 ## 📁 Folder Structure
 
 ```
