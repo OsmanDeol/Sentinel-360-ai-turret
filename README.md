@@ -38,7 +38,8 @@ This project is split into **3 core components**, each with its **own detailed R
 
 ## 🧠 Intelligent Workflow Overview
 
-![overview](./diagrams/overview.png)  
+![overview](./diagrams/uml-overview.png
+)  
 📍 **System Overview** — Frontend → Flask (PC) → Servo Control (Pi)
 
 ---
