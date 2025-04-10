@@ -5,6 +5,14 @@
 ![Banner](sentinel%20360.jpeg)
 
 ---
+## 📂 Repository Structure
+
+This project is split into 3 main components. Each has its own dedicated README for clarity and in-depth documentation:
+
+- [`frontend/`](./frontend) — Web Dashboard built with Next.js → [Frontend README](./frontend/README.md)
+- [`backend/`](./backend) — PC-side YOLO + Flask system → [Backend README](./backend/README.md)
+- [`pi/`](./pi) — Raspberry Pi code for controlling servos → [Pi README](./pi/README.md)
+
 
 ### 🚀 Features
 
@@ -21,6 +29,14 @@
 Sentinel-360 is a modular AI-powered turret system that features real-time face tracking, surveillance alerts, and manual joystick control. It combines a Raspberry Pi for servo control, a PC for AI inference and video streaming, and a modern web dashboard for intuitive user control.
 
 ---
+
+---
+🛡️ Sentinel 360° AI Turret — Intelligent Surveillance & Tracking System
+
+🔗 GitHub: github.com/OsmanDeol/Sentinel-360-ai-turret
+
+---
+
 
 ## 📽️ Project Demo Video
 
